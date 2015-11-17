@@ -1,0 +1,41 @@
+
+Name of QuantLet: TVPactiveset
+
+Published in : 'Unpublished; Theoretically description of Time Varying 
+Penalization method.'
+
+Description : 'Performs LASSO regression in a moving window by using BIC criterion to 
+choose penalty parameter (lambda). The simulated data contains a break 
+point after which the cardinality of active set q changes. Plots time series 
+of lambda in LASSO regression. Furthermore, the cardinality of the active 
+set q, the L2-norm of the residuals, the L1-norm of the parameter beta 
+and the condition number of the squared design matrix [t(X)X] are plotted. 
+All of the plots contain results from a number of simulations and the 
+average over all of them.'
+
+Keywords : 'LASSO, lasso shrinkage, L1-norm penalty, change point, bic,
+euclidean norm,regression, simulation, plot, visualization, historical 
+moving window,time-series, estimation, L1-norm, error, beta, multi 
+dimensional, multivariate normal'
+
+See also : 'TVPvariance, TVPdesign, MVAgrouplasso, MVAlassocontour, MVAlassoregress, SMSlassocar, 
+SMSlassoridge,quantilelasso'
+
+Author : Lenka Zbonakova
+
+Submitted: 
+
+Input: 
+- n.obs   : Number of observations to simulate
+- n.param : Number of parameters to simulate
+- n.sim   : Number of simulations
+- w       : Size of each moving window
+- seed1   : Seed to simulate design matrix X
+- seed2   : Seed to simulate error terms
+
+Example: 
+- Lambda
+- Cardinality of q
+- L2-norm of the residuals
+- L1-norm of the beta
+- Condition number of (X'X)
